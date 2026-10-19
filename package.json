@@ -1,0 +1,20 @@
+{
+  "name": "abid-hussain-portfolio",
+  "version": "1.0.0",
+  "description": "Full-Stack AI/ML Engineer Portfolio - Abid Hussain",
+  "scripts": {
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd server && npm run dev",
+    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
+    "build:client": "cd client && npm run build",
+    "build:server": "cd server && npm run build",
+    "start:client": "cd client && npm start",
+    "start:server": "cd server && npm start",
+    "install:all": "cd client && npm install && cd ../server && npm install",
+    "docker:up": "docker-compose up -d --build",
+    "docker:down": "docker-compose down"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
